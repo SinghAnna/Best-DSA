@@ -49,22 +49,22 @@ class Graph {
         }
     }
 
-    void bfsUitl(int node, boolean[] visited){
+    // void bfsUitl(int node, boolean[] visited){
 
-        visited[node] = true;
-        System.out.print(node + " ");
+    //     visited[node] = true;
+    //     System.out.print(node + " ");
 
-        for (int nbr : adj.get(node)) {
-            if (!visited[nbr]) {
-                bfsUitl(nbr, visited);
-            }
-        }
-    }
+    //     for (int nbr : adj.get(node)) {
+    //         if (!visited[nbr]) {
+    //             bfsUitl(nbr, visited);
+    //         }
+    //     }
+    // }
 
-    void bfsRecursion(int start){
-        boolean[] visited = new boolean[V];
-        bfsUitl(start, visited);
-    }
+    // void bfsRecursion(int start){
+    //     boolean[] visited = new boolean[V];
+    //     bfsUitl(start, visited);
+    // }
 }
 
 public class BFS {
@@ -80,9 +80,9 @@ public class BFS {
 
         // g1.printGraph();
 
-     //   g1.bfs(2);
+       g1.bfs(2);
 
-        g1.bfsRecursion(2);
+        //g1.bfsRecursion(2);
 
 
     }
