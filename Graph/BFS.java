@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.LinkedList;
 
 class Graph {
     int V;
@@ -29,7 +30,6 @@ class Graph {
     }
 
     void bfs(int start) {
-
         boolean[] visited = new boolean[V];
         Queue<Integer> q = new LinkedList<>();
 
@@ -80,7 +80,7 @@ public class BFS {
 
         // g1.printGraph();
 
-       g1.bfs(2);
+        g1.bfs(2);
 
         //g1.bfsRecursion(2);
 
